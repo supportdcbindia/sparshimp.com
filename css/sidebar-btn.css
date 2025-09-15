@@ -1,250 +1,238 @@
+/* stick css */
 
-
-    /* stick css */
-
-    .sticklist {
-        position: fixed;
-        z-index: 99999;
-        top: 50%;
-        display: flex;
-        align-items: baseline;
-        transition: all 1s ease 0s;
-        /*max-width: 170px;
+.sticklist {
+  position: fixed;
+  z-index: 99999;
+  top: 50%;
+  display: flex;
+  align-items: baseline;
+  transition: all 1s ease 0s;
+  /*max-width: 170px;
         min-width: 170px;*/
-        flex-direction: column;
-        margin-top: -101px;
-    }
-    .sticklist ul{
-        padding: 0px;
-        margin: 0px;
-    }
+  flex-direction: column;
+  margin-top: -101px;
+}
+.sticklist ul {
+  padding: 0px;
+  margin: 0px;
+}
 
-    .open-close-arrow {
-        border-radius: 0px;
-        padding: 10px;
-        text-align: center;
-        line-height: 32px;
-        box-shadow: 0 3px 6px rgb(0 0 0 / 16%);
-        background: #598a2f;
-        color: #fff;
-        font-size: 20px;
-        -webkit-transition: all .3s ease 0s;
-        display: inline-block;
-        vertical-align: bottom;
-        border: 0px;
-        width: auto;
-        min-width: 50px;
-        border-radius: 0px 10px 10px 0px;
-    }
+.open-close-arrow {
+  border-radius: 0px;
+  padding: 10px;
+  text-align: center;
+  line-height: 32px;
+  box-shadow: 0 3px 6px rgb(0 0 0 / 16%);
+  background: #598a2f;
+  color: #fff;
+  font-size: 20px;
+  -webkit-transition: all 0.3s ease 0s;
+  display: inline-block;
+  vertical-align: bottom;
+  border: 0px;
+  width: auto;
+  min-width: 50px;
+  border-radius: 0px 10px 10px 0px;
+}
 
-   
+li.whataspp-icon,
+.inquiery-icon {
+  overflow: hidden;
+}
 
-    li.whataspp-icon,
-    .inquiery-icon {
-        overflow: hidden;
-    }
+li.whataspp-icon.none-li.open {
+  position: relative;
+  width: 100%;
+  left: 0;
+}
 
-    li.whataspp-icon.none-li.open {
-        position: relative;
-        width: 100%;
-        left: 0;
-    }
+.sticklist ul.open {
+  width: 100%;
+  left: 0;
+}
 
-    .sticklist ul.open {
-        width: 100%;
-        left: 0;
-    }
+li.whataspp-icon {
+  background: #2db640;
+  border: 0px solid #2db640;
+  color: #fff;
+}
 
-    li.whataspp-icon {
-        background: #2db640;
-        border: 0px solid #2db640;
-        color: #fff;
-    }
+.none-li a i {
+  font-size: 26px;
+  padding: 0px;
+  color: #fff;
+}
+.sticklist ul.open li {
+  max-width: 170px;
+  width: 100%;
+  font-size: 16px;
+  pointer-events: unset;
+}
 
-    .none-li a i {
-        font-size: 26px;
-        padding: 0px;
-        color: #fff;
-    }
-    .sticklist ul.open li {
-        max-width: 170px;
-        width: 100%;
-        font-size: 16px;
-        pointer-events: unset;
-    }
+li.none-li a i {
+  padding-right: 0px;
+}
 
-    li.none-li a i {
-        padding-right: 0px;
-    }
+button.open-close-arrow.open span.open-arrow {
+  display: none;
+}
 
-    button.open-close-arrow.open span.open-arrow {
-        display: none;
-    }
+button.open-close-arrow span.open-arrow {
+  display: block;
+}
 
-    button.open-close-arrow span.open-arrow {
-        display: block;
-    }
+.open-close-arrow span.close-arrow {
+  display: none;
+  transition: 0.2s all;
+}
 
-    .open-close-arrow span.close-arrow {
-        display: none;
-        transition: 0.2s all;
-    }
+.open-close-arrow.open span.close-arrow {
+  display: block !important;
+}
 
-    .open-close-arrow.open span.close-arrow {
-        display: block !important;
-    }
+button.open-close-arrow.open span.open-arrow {
+  display: none;
+}
 
-    button.open-close-arrow.open span.open-arrow {
-        display: none;
-    }
+button.open-close-arrow span.open-arrow {
+  display: block;
+}
 
-    button.open-close-arrow span.open-arrow {
-        display: block;
-    }
+.open-close-arrow span.close-arrow {
+  display: none;
+  transition: 0.2s all;
+}
 
-    .open-close-arrow span.close-arrow {
-        display: none;
-        transition: 0.2s all;
-    }
+.open-close-arrow.open span.close-arrow {
+  display: block !important;
+}
 
-    .open-close-arrow.open span.close-arrow {
-        display: block !important;
-    }
+.btn-text {
+  opacity: 0;
+  white-space: nowrap;
+  display: none;
+}
 
-    .btn-text {
-        opacity: 0;
-        white-space: nowrap;
-        display: none;
-    }
+.none-li .icon {
+  transition: 0.8s all;
+}
 
-    .none-li .icon {
-        transition: 0.8s all;
-    }
+.inquiery-icon {
+  background: #000 !important;
+  color: #fff !important;
+}
 
-    .inquiery-icon {
-        background: #000 !important;
-        color: #fff !important;
-    }
+.sticklist ul.open li.whataspp-icon.none-li span.btn-text,
+.sticklist ul.open li.inquiery-icon.none-li span.btn-text {
+  opacity: 1;
+  display: block;
+}
 
-    .sticklist ul.open li.whataspp-icon.none-li span.btn-text,
-    .sticklist ul.open li.inquiery-icon.none-li span.btn-text {
-        opacity: 1;
-        display: block;
-    }
+.sticklist ul.open li {
+  background: #fff;
+}
 
-    .sticklist ul.open li {
-        background: #fff;
-    }
+.sticklist ul.open li.whataspp-icon {
+  color: #fff;
+  background: #2db640;
+  border-color: #2db640;
+}
 
-    .sticklist ul.open li.whataspp-icon {
-        color: #fff;
-        background: #2db640;
-        border-color: #2db640;
-    }
+.sticklist .whataspp-icon:hover {
+  max-width: 170px;
+  width: 100%;
+  font-size: 16px;
+  pointer-events: unset;
+}
 
+.sticklist .whataspp-icon:hover .btn-text {
+  opacity: 1;
+  color: #fff !important;
+  display: block;
+}
 
+.sticklist .inquiery-icon:hover {
+  max-width: 170px;
+  width: 100%;
+  font-size: 16px;
+  color: #fff !important;
+  text-decoration: none;
+}
 
-    .sticklist .whataspp-icon:hover {
-        max-width: 170px;
-        width: 100%;
-        font-size: 16px;
-        pointer-events: unset;
-    }
+.sticklist .inquiery-icon:hover .btn-text {
+  opacity: 1;
+  color: #fff;
+  display: block;
+}
 
-    .sticklist .whataspp-icon:hover .btn-text {
-        opacity: 1;
-        color: #fff !important;
-        display: block;
-    }
+.sticklist ul.open li.whataspp-icon span.btn-text {
+  color: #fff;
+}
 
+.sticklist ul.open li.inquiery-icon span.btn-text {
+  color: #fff;
+}
 
-    .sticklist .inquiery-icon:hover {
-        max-width: 170px;
-        width: 100%;
-        font-size: 16px;
-        color: #fff !important;
-        text-decoration: none;
-    }
+.download-pdf {
+  background: #000 !important;
+  color: #000 !important;
+  border: 0px solid transparent !important;
+}
 
-    .sticklist .inquiery-icon:hover .btn-text {
-        opacity: 1;
-        color: #fff;
-        display: block;
-    }
+span.btn-text {
+  transition: 0.8s all;
+}
 
-   
-    .sticklist ul.open li.whataspp-icon span.btn-text {
-        color: #fff;
-    }
+li.download-pdf.none-li.inquiery-icon.click1.imgnone:hover span.icon,
+.sticklist
+  ul.open
+  li.download-pdf.none-li.inquiery-icon.click1.imgnone
+  span.icon {
+  transform: translateX(-17px);
+}
+.imgnone a {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-decoration: unset !important;
+}
 
-    .sticklist ul.open li.inquiery-icon span.btn-text {
-        color: #fff;
-    }
+.imgnone .btn-text {
+  padding-right: 20px;
+}
 
-    .download-pdf {
-        background: #000 !important;
-        color: #000 !important;
-        border: 0px solid transparent !important;
-    }
+.imgnone {
+  display: flex;
+  align-items: center;
+  transition: 0.6s all !important;
+  width: 50px;
+  margin: 5px 0px;
+  border-radius: 0px 10px 10px 0px;
+}
 
+ul#sideService.open li h6 {
+  display: block;
+}
 
+ul#sideService.open li {
+  background: #00457e;
+}
 
-    span.btn-text {
-        transition: 0.8s all;
-    }
-
-
-
-    li.download-pdf.none-li.inquiery-icon.click1.imgnone:hover span.icon,
-    .sticklist ul.open li.download-pdf.none-li.inquiery-icon.click1.imgnone span.icon {
-        transform: translateX(-17px);
-    }
-    .imgnone a {
-        width: 100%;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        text-decoration: unset !important;
-    }
-    
-    .imgnone .btn-text {
-        padding-right: 20px;
-      
-    }
-    
-    .imgnone {
-        display: flex;
-        align-items: center;
-        transition: 0.6s all !important;
-        width: 50px;
-        margin: 5px 0px;
-        border-radius: 0px 10px 10px 0px;
-    }
-    
-    
-    ul#sideService.open li h6 {
-        display: block;
-    }
-    
-    ul#sideService.open li {
-        background: #00457e;
-    }
-    
-    
-    
-        .sticklist span.icon, .sticklist span.icon1 {
-            min-width: 50px;
-            min-height: 50px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
+.sticklist span.icon,
+.sticklist span.icon1 {
+  min-width: 50px;
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 /* -----------------------  2 side button ------------------------------------- */
 
 /* mobile side btn */
 @media screen and (max-width: 767px) {
-.footer-box {
+  .footer-box {
     display: flex !important;
     position: fixed;
     left: 0;
@@ -254,34 +242,224 @@
     color: white;
     text-align: center;
     z-index: 999999;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-.book-app {
+    display: grid !important;
+    grid-template-columns: 20% 1fr 20%;
+  }
+  .book-app {
     width: 100%;
     padding: 2%;
     float: left;
     line-height: 40px;
     text-align: center;
     max-height: 100px;
-}
+  }
 
-.sticklist
-{
+  .sticklist {
     display: none !important;
-}
-
+  }
 }
 
 .modal-backdrop.show {
-    display: none !important;
+  display: none !important;
 }
 
 .product-page-row .single-item-text a {
-    color: #249cdd !important;
-    font-size: 16px !important;
+  color: #249cdd !important;
+  font-size: 16px !important;
 }
 
 .charity-banner .slick-slide img {
-    width: 100% !important;
+  width: 100% !important;
+}
+
+.leftInqueryBtn {
+  position: fixed;
+  top: 220px;
+  z-index: 11;
+  background: #68b92e;
+  transform: rotate(270deg);
+  left: 0;
+  height: auto;
+  width: fit-content;
+  margin-left: -61px;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+.leftInqueryBtn a {
+  display: flex;
+  gap: 15px;
+  color: #fff !important;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+.leftInqueryBtn a .btn-text {
+  opacity: 1;
+}
+
+.whatsapp-info,
+.pulse {
+  font-family: "poppins";
+  display: inline-block;
+  color: #fff;
+  background: #1ab744;
+  position: fixed;
+  bottom: 40px;
+  left: 40px;
+  font-size: 38px;
+  text-align: center;
+  z-index: 99;
+  border-radius: 90%;
+  height: 60px;
+  width: 60px;
+  line-height: 62px;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.whatsapp-button a {
+  color: #fff !important;
+}
+
+@media screen and (max-width: 767px) {
+  .whatsapp-info,
+  .pulse {
+    font-family: "poppins";
+    display: inline-block;
+    color: #fff;
+    background: #1ab744;
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    font-size: 33px;
+    text-align: center;
+    z-index: 99;
+    border-radius: 90%;
+    height: 55px;
+    width: 55px;
+    line-height: 58px;
+    cursor: pointer;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
+  }
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(0.1);
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    -webkit-transform: scale(2);
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale(0.1);
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    -webkit-transform: scale(2);
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+.pulse:nth-child(1) {
+  -webkit-animation: pulse 2s infinite;
+  animation: pulse 2s infinite;
+}
+
+.pulse:nth-child(2) {
+  -webkit-animation: pulse 2s infinite 0.3s;
+  animation: pulse 2s infinite 0.3s;
+}
+
+.pulse:nth-child(3) {
+  -webkit-animation: pulse 2s infinite 0.6s;
+  animation: pulse 2s infinite 0.6s;
+}
+
+.callBtn {
+}
+
+.callBtn .pulse {
+  left: unset;
+  background: #009df2 !important;
+  bottom: 40px;
+  right: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .whatsapp-button,
+  .leftInqueryBtn {
+    display: none !important;
+  }
+  .CallBtnMobile i {
+    color: #fff;
+    font-size: 18px !important;
+  }
+  .WhatBtnMobile i {
+    color: #fff;
+    font-size: 22px !important;
+  }
+
+  .CallBtnMobile a,
+  .WhatBtnMobile a {
+    display: flex;
+  }
+
+  .CallBtnMobile,
+  .WhatBtnMobile {
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  footer {
+    margin-bottom: 44px;
+  }
+
+  .pbmit-progress-wrap.active-progress {
+    bottom: 80px;
+    right: 15px;
+  }
+}
+
+.callBtn.activeCallBtn .pulse {
+  bottom: 150px;
+}
+.callBtn .pulse i,
+.CallBtnMobile i {
+  font-size: 20px;
+  transform: rotate(90deg);
+}
+.whatsapp-info .icon1 i {
+  font-size: 26px;
+}
+.whatsapp-info .icon1 {
+  display: flex;
 }
