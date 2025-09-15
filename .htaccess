@@ -1,0 +1,229 @@
+RewriteEngine on
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP_HOST} ^sparshimp.com [NC]
+RewriteRule ^(.*)$ https://www.sparshimp.com/$1 [L,R=301]
+
+RewriteCond %{HTTPS} on
+RewriteCond %{HTTP_HOST} ^sparshimp.com [NC]
+RewriteRule ^(.*)$ https://www.sparshimp.com/$1 [L,R=301]
+
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP_HOST} ^www\.sparshimp.com [NC]
+RewriteRule ^(.*)$ https://www.sparshimp.com/$1 [L,R=301]
+
+RewriteCond %{THE_REQUEST} ^.*/index.html
+RewriteRule ^(.*)index.html$ https://www.sparshimp.com/$1 [R=301,L]
+
+Redirect	301	/sheet-plate.html	https://www.sparshimp.com/
+Redirect	301	/coils.html	https://www.sparshimp.com/
+Redirect	301	/slitting-coils.html	https://www.sparshimp.com/
+Redirect	301	/round-bars.html	https://www.sparshimp.com/
+Redirect	301	/wire.html	https://www.sparshimp.com/
+Redirect	301	/fasteners.html	https://www.sparshimp.com/
+Redirect	301	/angle-channel-flats.html	https://www.sparshimp.com/
+Redirect	301	/circle.html	https://www.sparshimp.com/
+Redirect	301	/perforated-sheets.html	https://www.sparshimp.com/
+Redirect	301	/shim-sheets.html	https://www.sparshimp.com/
+Redirect	301	/pipe-fittings.html	https://www.sparshimp.com/
+Redirect	301	/flanges.html	https://www.sparshimp.com/
+Redirect	301	/pipe.html	https://www.sparshimp.com/
+Redirect	301	/teflon.html	https://www.sparshimp.com/
+Redirect	301	/threaded-rods.html	https://www.sparshimp.com/
+Redirect 301 /stainless-steel-x5crni1810%20-sheet-plate-supplier-exporter.html /stainless-steel-409-shim-sheets-supplier-exporter.html
+Redirect 301 /stainless-steel-x5crni1810-cold-rolled-supplier-exporter.html /stainless-steel-430-sheet-plate-supplier-exporter.html
+Redirect 301 /teflon-bars.html-supplier-exporter.html /stainless-steel-304-sheet-plate-supplier-exporter.html
+Redirect 301 /teflon-sheet-plate-supplier-exporter.html /stainless-steel-321-321h-perforated-sheets-supplier-exporter.html
+Redirect 301 /teflon-washer.html /stainless-steel-321-321h-perforated-sheets-supplier-exporter.html
+## 82 pages deleted redirection 26-02-2022
+Redirect	301	/duplex-steel-31803-bars-supplier-exporter.html	/
+Redirect	301	/duplex-steel-s31803-pipe-fittings-supplier-exporter.html	/
+Redirect	301	/duplex-steel-31803-pipe-supplier-exporter.html	/
+Redirect	301	/hastelloy-c22-wire-supplier-exporter.html	/
+Redirect	301	/alloy-20-threaded-rods-supplier-exporter.html	/
+Redirect	301	/smo-254-bars-supplier-exporter.html	/
+Redirect	301	/titanium-bars-supplier-exporter.html	/
+Redirect	301	/monel-400-bars-supplier-exporter.html	/
+Redirect	301	/astm-a453-gr-660a-fasteners-supplier-exporter.html	/
+Redirect	301	/hastelloy.html	/
+Redirect	301	/monel-k500-bars-supplier-exporter.html	/
+Redirect	301	/titanium.html	/
+Redirect	301	/hastelloy-c276-wire-supplier-exporter.html	/
+Redirect	301	/stainless-steel-347-347h-threaded-rods-supplier-exporter.html	/
+Redirect	301	/alloy-20-bars-supplier-exporter.html	/
+Redirect	301	/astm-a453-gr-660a-washers-supplier-exporter.html	/
+Redirect	301	/super-duplex-steel-s32750-circle-supplier-exporter.html	/
+Redirect	301	/monel-400-wire-supplier-exporter.html	/
+Redirect	301	/stainless-steel-304l-threaded-rods-supplier-exporter.html	/
+Redirect	301	/monel-400-threaded-rods-supplier-exporter.html	/
+Redirect	301	/incoloy-800-800h-800ht-threaded-rods-supplier-exporter.html	/
+Redirect	301	/incoloy-801-threaded-rods-supplier-exporter.html	/
+Redirect	301	/stainless-steel-310s-threaded-rods-supplier-exporter.html	/
+Redirect	301	/super-duplex-steel-32760-slitting-coils-supplier-exporter.html	/
+Redirect	301	/inconel-601-threaded-rods-supplier-exporter.html	/
+Redirect	301	/stainless-steel-304h-threaded-rods-supplier-exporter.html	/
+Redirect	301	/inconel-600-threaded-rods-supplier-exporter.html	/
+Redirect	301	/monel-k500-threaded-rods-supplier-exporter.html	/
+Redirect	301	/stainless-steel-316ti-threaded-rods-supplier-exporter.html	/
+Redirect	301	/17-4-ph-threaded-rods-supplier-exporter.html	/
+Redirect	301	/duplex-steel-31803-slitting-coils-supplier-exporter.html	/
+Redirect	301	/smo-254-threaded-rods-supplier-exporter.html	/
+Redirect	301	/inconel-625-threaded-rods-supplier-exporter.html	/
+Redirect	301	/nitronic-30-threaded-rods-supplier-exporter.html	/
+Redirect	301	/stainless-steel-316l-threaded-rods-supplier-exporter.html	/
+Redirect	301	/astm-a453-gr-660a-nuts-supplier-exporter.html	/
+Redirect	301	/aluminium-bronze-threaded-rods-supplier-exporter.html	/
+Redirect	301	/super-duplex-steel-32750-32760-pipe-supplier-exporter.html	/
+Redirect	301	/stainless-steel-904l-threaded-rods-supplier-exporter.html	/
+Redirect	301	/stainless-steel-304-threaded-rods-supplier-exporter.html	/
+Redirect	301	/stainless-steel-317-317l-threaded-rods-supplier-exporter.html	/
+Redirect	301	/astm-a453-gr-660a-screws-supplier-exporter.html	/
+Redirect	301	/hastelloy-c22-threaded-rods-supplier-exporter.html	/
+Redirect	301	/stainless-steel-316-threaded-rods-supplier-exporter.html	/
+Redirect	301	/titanium-grade-2-threaded-rods-supplier-exporter.html	/
+Redirect	301	/hastelloy-c276-bars-supplier-exporter.html	/
+Redirect	301	/inconel-625-wire-supplier-exporter.html	/
+Redirect	301	/stainless-steel-316h-threaded-rods-supplier-exporter.html	/
+Redirect	301	/15-5-ph-threaded-rods-supplier-exporter.html	/
+Redirect	301	/hastelloy-c22-bars-supplier-exporter.html	/
+Redirect	301	/astm-a453-gr-660a-bolts-supplier-exporter.html	/
+Redirect	301	/super-duplex-steel-32750-slitting-coils-supplier-exporter.html	/
+Redirect	301	/hastelloy-x-wire-supplier-exporter.html	/
+Redirect	301	/hastelloy-c276-threaded-rods-supplier-exporter.html	/
+Redirect	301	/duplex-steel-s31803-circle-supplier-exporter.html	/
+Redirect	301	/super-duplex-steel-s32750-s32760-wire-supplier-exporter.html	/
+Redirect	301	/monel-k500-wire-supplier-exporter.html	/
+Redirect	301	/duplex-steel-31803-wire-supplier-exporter.html	/
+Redirect	301	/13-8-mo-threaded-rods-supplier-exporter.html	/
+Redirect	301	/incoloy-825-wire-supplier-exporter.html	/
+Redirect	301	/stainless-steel-321-321h-threaded-rods-supplier-exporter.html	/
+Redirect	301	/incoloy-800-800h-800ht-wire-supplier-exporter.html	/
+Redirect	301	/incoloy-825-threaded-rods-supplier-exporter.html	/
+Redirect	301	/titanium-grade-7-threaded-rods-supplier-exporter.html	/
+Redirect	301	/cast-iron-filler-wire-welding-electrode-supplier-exporter.html	/
+Redirect	301	/super-duplex-steel-s32760-circle-supplier-exporter.html	/
+Redirect	301	/astm-a453-gr-660a-stud-bolts-supplier-exporter.html	/
+Redirect	301	/super-duplex-steel-s32750-s32760-pipe-fittings-supplier-exporter.html	/
+Redirect	301	/phosphor-bronze-threaded-rods-supplier-exporter.html	/
+Redirect	301	/inconel-600-wire-supplier-exporter.html	/
+Redirect	301	/super-duplex-steel-s32760-bars-supplier-exporter.html	/
+Redirect	301	/incoloy-925-wire-supplier-exporter.html	/
+Redirect	301	/super-duplex-steel-s32750-bars-supplier-exporter.html	/
+Redirect	301	/titanium-grade-5-threaded-rods-supplier-exporter.html	/
+Redirect	301	/stainless-steel-310h-threaded-rods-supplier-exporter.html	/
+Redirect	301	/stainless-steel-317-317l-wire-supplier-exporter.html	/
+Redirect	301	/astm-a453-gr660-threaded-rods-supplier-exporter.html	/
+Redirect	301	/duplex-steel-31803-threaded-rods-supplier-exporter.html	/
+Redirect	301	/titanium-threaded-rods-supplier-exporter.html	/
+Redirect	301	/nitronic-50-threaded-rods-supplier-exporter.html	/
+Redirect	301	/super-duplex-steel-s32760-threaded-rods-supplier-exporter.html	/
+Redirect	301	/stainless-steel-304-304l-fasteners-supplier-exporter.html /
+Redirect    301 /stainless-steel-304-bars-supplier-exporter.html    /
+Redirect    301 /stainless-steel-316-316l-bolts-supplier-exporter.html  /
+Redirect    301 /stainless-steel-316-bars-supplier-exporter.html    /
+Redirect    301 /stainless-steel-filler-wire-supplier-exporter.html /
+Redirect    301 /duplex-steel-s31803-fasteners-supplier-exporter.html /duplex-steel.html
+Redirect    301 /stainless-steel-316-316l-washers-supplier-exporter.html    /stainless-steel.html
+Redirect    301 /stainless-steel-316-slitting-coils-supplier-exporter.html  /stainless-steel.html
+Redirect    301 /stainless-steel-304-304l-bolts-supplier-exporter.html  /stainless-steel.html
+Redirect	301	/stainless-steel-904l-circle-supplier-exporter.html	/stainless-steel.html
+Redirect	301	/stainless-steel-304l-circle-supplier-exporter.html	/stainless-steel.html
+Redirect	301	/stainless-steel-347-347h-circle-supplier-exporter.html	/stainless-steel.html
+Redirect	301	/stainless-steel-304-circle-supplier-exporter.html	/stainless-steel.html
+Redirect	301	/stainless-steel-316ti-circle-supplier-exporter.html	/stainless-steel.html
+Redirect	301	/stainless-steel-316l-circle-supplier-exporter.html	/stainless-steel.html
+Redirect	301	/stainless-steel-316-circle-supplier-exporter.html	/stainless-steel.html
+Redirect	301	/stainless-steel-321-321h-circle-supplier-exporter.html	/stainless-steel.html
+Redirect	301	/stainless-steel-310s-circle-supplier-exporter.html	/stainless-steel.html
+Redirect    301 /monel.html /other-materials.html
+
+
+## New pages redirection 27-09-2024 by rakesh
+Redirect    301 /stainless-steel-304-sheet-plate-supplier-exporter.html /ss-304-sheet-supplier.html
+Redirect    301 /stainless-steel-304l-sheet-plate-supplier-exporter.html /304l-stainless-steel-plate-supplier.html
+Redirect    301 /stainless-steel-316-sheet-plate-supplier-exporter.html /316-stainless-steel-sheet-supplier.html
+Redirect    301 /stainless-steel-316l-sheet-plate-supplier-exporter.html /stainless-steel-316l-plate-supplier.html
+Redirect    301 /stainless-steel-202-sheet-plate-supplier-exporter.html /202-stainless-steel-sheet-supplier.html
+Redirect    301 /stainless-steel-430-sheet-plate-supplier-exporter.html /430-stainless-steel-sheet-supplier.html
+Redirect    301 /stainless-steel-441-sheet-plate-supplier-exporter.html /stainless-steel-441-sheets-supplier.html
+Redirect    301 /jindal-steel-sheet-plate-supplier-exporter.html /jindal-steel-sheet-supplier.html
+Redirect    301 /stainless-steel-304-coils-supplier-exporter.html /304-stainless-steel-coil-supplier.html
+Redirect    301 /stainless-steel-304l-coils-supplier-exporter.html /stainless-steel-304l-coils-supplier.html
+Redirect    301 /stainless-steel-316-coils-supplier-exporter.html /stainless-steel-316-coils-supplier.html
+Redirect    301 /stainless-steel-316l-coils-supplier-exporter.html /stainless-steel-316l-coils-supplier.html
+Redirect    301 /stainless-steel-430-coils-supplier-exporter.html /stainless-steel-430-coils-supplier.html
+Redirect    301 /stainless-steel-441-coils-supplier-exporter.html /stainless-steel-441-coils-supplier.html
+Redirect    301 /stainless-steel-304-angle-supplier-exporter.html /304-stainless-steel-angle-supplier.html
+Redirect    301 /stainless-steel-304-channel-supplier-exporter.html /stainless-steel-304-channel-supplier.html
+Redirect    301 /stainless-steel-316-angle-supplier-exporter.html /stainless-steel-316-angle-supplier.html
+Redirect    301 /stainless-steel-316-channel-supplier-exporter.html /stainless-steel-316-channel-supplier.html
+Redirect    301 /stainless-steel-304-flat-bars-supplier-exporter.html /stainless-steel-304-flat-bars-supplier.html
+Redirect    301 /stainless-steel-316-flat-bars-supplier-exporter.html /stainless-steel-316-flat-bars-supplier.html
+Redirect    301 /stainless-steel-304-flats-angle-channel-supplier-exporter.html /304-stainless-steel-angle-supplier.html
+Redirect    301 /stainless-steel-304l-flats-angle-channel-supplier-exporter.html /stainless-steel-304l-angles-supplier.html
+Redirect    301 /stainless-steel-316-flats-angle-channel-supplier-exporter.html /stainless-steel-316-angle-supplier.html
+Redirect    301 /stainless-steel-316l-flats-angle-channel-supplier-exporter.html /316l-stainless-steel-flat-bar-supplier.html
+
+ErrorDocument 404 /404.html
+
+<IfModule mod_expires.c>
+  ExpiresActive On
+
+  # Images
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/gif "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType image/x-icon "access plus 1 year"
+
+  # Video
+  ExpiresByType video/mp4 "access plus 1 year"
+  ExpiresByType video/mpeg "access plus 1 year"
+
+  # CSS, JavaScript
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType text/javascript "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+
+  # Others
+  ExpiresByType application/pdf "access plus 1 month"
+  ExpiresByType application/x-shockwave-flash "access plus 1 month"
+</IfModule>
+
+<IfModule mod_deflate.c>
+  # Compress HTML, CSS, JavaScript, Text, XML and fonts
+  AddOutputFilterByType DEFLATE application/javascript
+  AddOutputFilterByType DEFLATE application/rss+xml
+  AddOutputFilterByType DEFLATE application/vnd.ms-fontobject
+  AddOutputFilterByType DEFLATE application/x-font
+  AddOutputFilterByType DEFLATE application/x-font-opentype
+  AddOutputFilterByType DEFLATE application/x-font-otf
+  AddOutputFilterByType DEFLATE application/x-font-truetype
+  AddOutputFilterByType DEFLATE application/x-font-ttf
+  AddOutputFilterByType DEFLATE application/x-javascript
+  AddOutputFilterByType DEFLATE application/xhtml+xml
+  AddOutputFilterByType DEFLATE application/xml
+  AddOutputFilterByType DEFLATE font/opentype
+  AddOutputFilterByType DEFLATE font/otf
+  AddOutputFilterByType DEFLATE font/ttf
+  AddOutputFilterByType DEFLATE image/svg+xml
+  AddOutputFilterByType DEFLATE image/x-icon
+  AddOutputFilterByType DEFLATE text/css
+  AddOutputFilterByType DEFLATE text/html
+  AddOutputFilterByType DEFLATE text/javascript
+  AddOutputFilterByType DEFLATE text/plain
+  AddOutputFilterByType DEFLATE text/xml
+
+  # Remove browser bugs (only needed for really old browsers)
+  BrowserMatch ^Mozilla/4 gzip-only-text/html
+  BrowserMatch ^Mozilla/4\.0[678] no-gzip
+  BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+  Header append Vary User-Agent
+</IfModule>
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# Set the “ea-php74” package as the default “PHP” programming language.
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php74 .php .php7 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit
